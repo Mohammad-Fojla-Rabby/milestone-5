@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+    <!-- <div id="section">
+        <p>what is your name</p>
+        <p>where are you from</p>
+    </div>
+<script>
+   const para = document.createElement('p');
+   const node = document.createTextNode('hello world');
+   para.appendChild(node);
+   const element = document.getElementById('section');
+   element.appendChild(para);
+</script> -->
+<section id="paren">
+    <h1 id="count">0</h1>
+    <button id="first" class="class">button1</button><br> <button id="last" class="class">button2</button> 
+
+</section>
+
+
+<script>
+let count= 0;
+document.getElementById('first').addEventListener('click', function (e){
+    count = count +1;
+   document.getElementById('count').innerText = count;
+    
+})
+document.getElementById('last').addEventListener('click', function (e){
+    count = count -1;
+    document.getElementById('count').innerText = count;
+})
+</script>
+</body>
+</html>

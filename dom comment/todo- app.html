@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <h1>To Do list </h1>
+        <input id="inputValue" type="text" placeholder="write string">
+        <button id="additems">add items</button>
+     <table id="tableParen">
+        <thead>
+            <th>Number</th>
+            <th>decbription</th>
+            <th>Action</th>
+            
+
+        </thead>
+
+     </table>
+    </section>
+    <script>
+        const additems  = document.getElementById('additems');
+     const tableParen = document.getElementById('tableParen');
+     
+        additems.addEventListener('click', function (){
+            const inputVlaue = document.getElementById('inputValue');
+
+     
+     createTbodyTag = document.createElemen('p') 
+         creaTeTbodyTag.innerText = inputVlaue.value;
+            tableParen.appendChild(createTbodyTag)
+        })
+     
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <section id="paren">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique corrupti nihil a blanditiis alias veritatis. Veritatis non incidunt itaque ratione neque, unde aperiam id quibusdam ad fuga dignissimos aliquam ut!</p>
+            <p>Magnam deserunt ex et mollitia obcaecati in nihil nemo, consequatur, quisquam aliquam aperiam corrupti quam ullam amet nostrum ea error commodi quasi temporibus debitis aliquid laboriosam! Veniam repudiandae cumque perspiciatis.</p>
+            <p>Quasi dignissimos, minima corporis animi accusamus, accusantium odit ad labore quod doloribus libero eius aliquid laboriosam nesciunt suscipit necessitatibus nam quo at ab obcaecati ex. Impedit dolorum alias et culpa!</p>
+        </section>
+        <textarea name="" id="comment-box" cols="30" rows="10"></textarea>
+    <button id="submit-button"> post</button>
+    <script>
+        document.getElementById('submit-button').addEventListener('click', function(){
+            const write = document.getElementById('comment-box');
+            cratetag = document.createElement('p');
+            cratetag.innerText = write.value;
+            const allparen = document.getElementById('paren');
+            allparen.appendChild(cratetag);
+            write.value = "";
+        })
+    </script>
+    </main>
+</body>
+</html>

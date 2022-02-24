@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <h3 id="count">0</h3>
+        <button onclick="add()" id="add">+</button> 
+        <button onclick="mainas()" id="mainas">-</button>
+    </section>
+<script>
+    let count = 0;
+    // document.getElementById('add').addEventListener('click', function (e){
+    //     count++;
+    //   control('count');
+    // })
+    // document.getElementById('mainas').addEventListener('click', function(e){
+    //   if(count > 0){
+    //     count--;
+    //  control('count');
+    //   }
+    // })
+    function add(){
+        count++;
+        control('count')
+    }
+    function mainas(){
+      if(0 < count)
+      count--;
+        control('count')
+    }
+    function control(id){
+        document.getElementById(id).innerText = count;
+        
+    }
+</script>    
+</body>
+</html>
